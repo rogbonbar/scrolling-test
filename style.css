@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+.title {
+    background-color: #111;
+}
+
+button {
+
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-weight: 600;
+                    border-radius: 8px;
+                    padding: 13px 23px;
+                    border: 1px solid #222222;
+                    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+                    background: #fff;
+                    color: #222222;
+                    :hover {
+                        border-color: #000000;
+                        background: #f7f7f7;
+                    }
+                
+}
+
+body {
+
+    background-color: #333;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+}
+
+h1 {
+    color: #f6a941;
+    margin:10px;
+    font-size: 2.5rem;
+
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+#box1 {
+    background-color: black;
+    background: url('img.png')no-repeat center center/cover ;
+}
+
+
+
+#box2 {
+    background: url('img1.png')no-repeat center center/cover ;
+}
+
+#box3 {
+    background: url('img2.png')no-repeat center center/cover ;
+}
+
+#box4 {
+    background: url('img3.png')no-repeat center center/cover ;
+}
+
+#box5 {
+    background: url('img4.png')no-repeat center center/cover ;
+}
+
+#box6 {
+    background: url('img5.png')no-repeat center center/cover ;
+}
+
+
+
+.box {
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin:10px;
+    border-radius: 10px;
+    box-shadow:2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform:translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform:translateX(-400%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+.box h2 {
+    font-size: 45px;
+}
+
